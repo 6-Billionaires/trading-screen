@@ -13,23 +13,27 @@
         <md-list>
           <md-list-item>
             <md-icon>move_to_inbox</md-icon>
-            <md-button to="/trade/bsa">BSA</md-button>
+            <md-button to="/trade/filter">FILTER</md-button>
+          </md-list-item>
 
+          <md-list-item>
+            <md-icon>move_to_inbox</md-icon>
+            <md-button to="/trade/bsa">BSA</md-button>
           </md-list-item>
 
           <md-list-item>
             <md-icon>send</md-icon>
-            <span class="md-list-item-text">BOA</span>
+            <md-button to="/trade/boa">BOA</md-button>
           </md-list-item>
 
           <md-list-item>
             <md-icon>delete</md-icon>
-            <span class="md-list-item-text">SSA</span>
+            <md-button to="/trade/soa">SOA</md-button>
           </md-list-item>
 
           <md-list-item>
             <md-icon>error</md-icon>
-            <span class="md-list-item-text">SOA</span>
+            <md-button to="/trade/ssa">SSA</md-button>
           </md-list-item>
         </md-list>
       </md-app-drawer>
@@ -56,5 +60,10 @@ export default {
   .md-drawer {
     width: 230px;
     max-width: calc(100vw - 125px);
+  }
+
+  .md-layout-row {
+
+    min-height: 1000px;
   }
 </style>
